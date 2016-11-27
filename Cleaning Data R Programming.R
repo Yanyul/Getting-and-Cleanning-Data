@@ -55,6 +55,6 @@ names(combined) <- gsub("^f","fast fourier transform-",names(combined))
 
 averageTable <- aggregate(. ~ subject + action, combined,mean)
 
-write.table(averageTable,file = "tidyMotionDataSet.txt",row.names = FALSE)
+write.table(averageTable,file = "tidyData.txt",row.names = FALSE)
 
 
